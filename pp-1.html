@@ -1144,49 +1144,118 @@ February 17, 2018</abbr></a></span>
 <aside itemprop='mainEntity' itemscope='itemscope' itemtype='https://schema.org/WPSideBar'>
 <div id='sidebar-right'>
 <div id='sidebar-wrapper'>
-<div class='sidebar section' id='sidebar'><div class='widget HTML' data-version='1' id='HTML102'>
-<h2 class='title'>Postingan Terbaru</h2>
-<div class='widget-content'>
-<style scoped='' type='text/css'>
-/* Recent Post Navigasi */
-#recentpostnav{border:1px solid #585858;width:100%;margin:0 auto}
-#recentpostsae{margin:0}
-.recentpostel{background:#fff;display:block;border:1px solid #ddd;margin:5px 0;padding:10px;height:79px}
-.recentpostel img{background:#fff;padding:4px;float:left;height:70px;margin-right:8px;width:70px;border:1px solid #ddd}
-.recentpostel h6,.recentpostel h6 a{text-decoration:none;font-size:13px!important;font-weight:700!important;margin:0;color:#111}
-.recentpostel:hover{background-color:#fefefe}
-.recentpostel p{font-size:12px;text-align:left;color:#555;line-height:normal;margin:5px 0}
-#recentpostload{color:#888;font-family:Tahoma;font-size:100px;letter-spacing:-10px;text-align:center;text-shadow:-5px 0 1px #444;background:url(https://2.bp.blogspot.com/-60aISBQLRY0/VFBMqzLfzGI/AAAAAAAABgM/GInmVTvEzkc/s1600/loader.gif) 50% 50% no-repeat #fff;height:470px;border:1px solid #ddd}
-#recentpostnavfeed{border:1px solid #ddd;color:#bbb;font-family:Verdana;font-size:12px;text-align:center;margin:0}
-#recentpostnavfeed:hover{background-color:#fefefe}
-#recentpostnavfeed a{color:#141414!important;font-family:Tahoma!important;font-size:12px!important;font-weight:400!important;display:block;padding:5px 10px}
-#recentpostnavfeed span{padding:5px 10px}
-#recentpostnavfeed .next{float:right}
-#recentpostnavfeed .previous{float:left}
-#recentpostnavfeed .home{text-align:center}
-#recentpostnavfeed a:hover,#recentpostnavfeed span.noactived{color:transparant!important}
-</style>
-<script type='text/javascript'>
-//<![CDATA[
-    var numfeed = 5;
-    var startfeed = 0;
-    var urlblog = "https://www.mastimon.com";
-    var charac = 45;
-    var urlprevious, urlnext;
-function arlinafeed(e,t){for(var n=e.split("<"),r=0;r<n.length;r++)-1!=n[r].indexOf(">")&&(n[r]=n[r].substring(n[r].indexOf(">")+1,n[r].length));return n=n.join(""),n=n.substring(0,t-1)}function showrecentpostsae(e){var t,n,r,a,i,s="";urlprevious="",urlnext="";for(var l=0;l<e.feed.link.length;l++)"previous"==e.feed.link[l].rel&&(urlprevious=e.feed.link[l].href),"next"==e.feed.link[l].rel&&(urlnext=e.feed.link[l].href);for(var d=0;d<numfeed&&d!=e.feed.entry.length;d++){t=e.feed.entry[d],n=t.title.$t;for(var l=0;l<t.link.length;l++)if("alternate"==t.link[l].rel){r=t.link[l].href;break}i="content"in t?t.content.$t:"summary"in t?t.summary.$t:"",a="media$thumbnail"in t?t.media$thumbnail.url:"https://3.bp.blogspot.com/-BHuXHny1kOk/VXrkSyxKCjI/AAAAAAAACas/pZLJAEUDtds/s1600/no-image.png",s+="<div class='recentpostel'>",s+="<a href='"+r+"' target='_blank'><img src='"+a+"' /></a>",s+="<h6><a href='"+r+"'>"+n+"</a></h6>",s+="<p>"+arlinafeed(i,charac)+"...</p>",s+="</div>"}document.getElementById("recentpostsae").innerHTML=s,s="",s+=urlprevious?"<a href='javascript:navigasifeed(-1);' class='previous'>Previous</a>":"<span class='noactived previous'>Previous</span>",s+=urlnext?"<a href='javascript:navigasifeed(1);' class='next'>Next</a>":"<span class='noactived next'>Next</span>",s+="<a href='javascript:navigasifeed(0);' class='home'>Home</a>",document.getElementById("recentpostnavfeed").innerHTML=s}function navigasifeed(e){var t,n;-1==e?(t=urlprevious.indexOf("?"),n=urlprevious.substring(t)):1==e?(t=urlnext.indexOf("?"),n=urlnext.substring(t)):n="?start-index=1&max-results="+numfeed+"&orderby=published&alt=json-in-script",n+="&callback=showrecentpostsae",incluirscript(n)}function incluirscript(e){1==startfeed&&removerscript(),document.getElementById("recentpostsae").innerHTML="<div id='recentpostload'></div>",document.getElementById("recentpostnavfeed").innerHTML="";var t=urlblog+"/feeds/posts/default"+e,n=document.createElement("script");n.setAttribute("type","text/javascript"),n.setAttribute("src",t),n.setAttribute("id","arlinalabel"),document.getElementsByTagName("head")[0].appendChild(n),startfeed=1}function removerscript(){var e=document.getElementById("arlinalabel"),t=e.parentNode;t.removeChild(e)}onload=function(){navigasifeed(0)};
-//]]>
-</script>
-<div id="recentpostsae"></div>
-<div id="recentpostnavfeed"></div>
-</div>
-</div>
- 
- <b:widget id='PopularPosts1' locked='false' title='Peliculas más vista' type='PopularPosts'>
+        <b:section class='sidebar' id='sidebar' preferred='yes'>
+          <b:widget id='HTML2' locked='false' title='Suscribete' type='HTML'>
+            <b:widget-settings>
+              <b:widget-setting name='content'>&lt;style type=&quot;text/css&quot;&gt;
+/*&lt;!CDATA[*/
+#w2b-mashable{width:300px;margin:auto;padding:0;}
+.w2b-googleplus {height: 57px;}
+.w2b-facebook {background:#FFFFFF;border: 1px solid #DCDCDC;margin-top: -2px;padding: 5px 10px;}
+.w2b-gplusone {background-color: #f5fcfe;border: 1px solid #d8e6eb;border-top: 1px solid white;font-size: .87em;color: black;padding: 9px 0 0 11px;line-height: 24px;height:30px;}
+.w2b-gplusone span {display: inline-block;vertical-align: middle;height: 20px;margin-top: -17px;font-size: 11px;font-family: &quot;Arial&quot;,&quot;Helvetica&quot;,sans-serif;}
+.w2b-twitter {background-color: #eef9fd;border: 1px solid #c7dbe2;border-top: 0;}
+.w2b-twitter a.twitter-follow-button {display: block;}
+.w2b-twitter iframe {margin: 9px 11px;}
+.w2b-sociallinks {background-color: #d8e6eb;border: 1px solid #b6d0da;border-top: 1px solid #eff5f7;padding: 10px 11px;overflow: hidden;}
+.w2b-sociallinks a {text-shadow: 1px 1px white;}
+.w2b-sociallinks .w2b-social {list-style: none;overflow: hidden;margin: 0 !important;padding: 0 !important;}
+.w2b-sociallinks .w2b-social li {border:0 none !important;float: left;line-height: 1;padding: 2px 0 4px 20px !important;margin-bottom: 3px;width: 70px;background: url(http://4.bp.blogspot.com/-WpJR2Qq0Sqw/Tx_4RZNGNuI/AAAAAAAABb0/WbNVkzuBexQ/s1600/w2b_socialsprite.png) no-repeat;font-size: 12px;}
+.w2b-sociallinks .w2b-social li a {display: block;font-weight: bold;color: #1E598E;text-decoration: none;text-shadow: 1px 1px 1px #fff;}
+.w2b-sociallinks .w2b-social li a:hover {text-decoration: underline;}
+.w2b-sociallinks .w2b-social li.twitter {background-position: 0 -150px !important;}
+.w2b-sociallinks .w2b-social li.rss {background-position: 0 -240px !important;}
+.w2b-sociallinks .w2b-social li.facebook {background-position: 0 -450px !important;}
+.w2b-emailbox {background-color: #E3EDF4;border: 1px solid #b6d0da;border-top: 1px solid #eff5f7;padding: 12px 16px;overflow: hidden;}
+.w2b-emailbox form{width:100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing: border-box;border: 0;}
+.w2b-emailbox input.emailu {float:left;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing: border-box;border: 0;color: #999;padding: 7px 10px 8px;width: 100%;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;font-size: 13px;}
+.w2b-emailbox input.emailu:focus {color: #333;}
+.w2b-emailbox input.submitu {-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;color: white;padding: 7px 14px;font-weight: bold;font-size: 12px;float: right;cursor: pointer;}
+.w2b-emailbox input.submitu:hover {text-decoration: none;}
+.w2bBlue{border:1px solid #397CBA;text-shadow: 1px 1px 0 #3A7AB2;background: #60abf8;background: -moz-linear-gradient(top, #60abf8 0%, #4082c4 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#60abf8), color-stop(100%,#4082c4));background: -webkit-linear-gradient(top, #60abf8 0%,#4082c4 100%);background: -o-linear-gradient(top, #60abf8 0%,#4082c4 100%);background: -ms-linear-gradient(top, #60abf8 0%,#4082c4 100%);background: linear-gradient(top, #60abf8 0%,#4082c4 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=&#39;#60abf8&#39;, endColorstr=&#39;#4082c4&#39;,GradientType=0 );}
+.w2bBlue:hover{background: #9ccefc;background: -moz-linear-gradient(top, #9ccefc 0%, #5087bf 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9ccefc), color-stop(100%,#5087bf));background: -webkit-linear-gradient(top, #9ccefc 0%,#5087bf 100%);background: -o-linear-gradient(top, #9ccefc 0%,#5087bf 100%);background: -ms-linear-gradient(top, #9ccefc 0%,#5087bf 100%);background: linear-gradient(top, #9ccefc 0%,#5087bf 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=&#39;#9ccefc&#39;, endColorstr=&#39;#5087bf&#39;,GradientType=0 );}.w2b-moresubs {background: none repeat scroll 0 0 #EBEBEB;border-style: solid;border-width: 1px;border-color: #fff #ccc #ccc;padding: 3px 8px 3px 3px;text-align: right;font-size: 7px;letter-spacing: 1px;}
+.w2b-moresubs a {display: inline-block;font-weight: bold;color: #1E598E;text-decoration: none;text-shadow: 1px 1px 1px #fff;}
+/*]]&gt;*/
+&lt;/style&gt;
+    &lt;div id=&quot;w2b-mashable&quot;&gt;
+	&lt;div class=&quot;w2b-googleplus&quot;&gt;
+	    &lt;script type=&quot;text/javascript&quot;&gt;
+		/*&lt;![CDATA[*/
+		window.___gcfg = {lang: &#39;en&#39;};
+		(function(){
+		    var po = document.createElement(&quot;script&quot;);
+		    po.type = &quot;text/javascript&quot;; po.async = true;po.src = &quot;https://apis.google.com/js/plusone.js&quot;;
+		    var s = document.getElementsByTagName(&quot;script&quot;)[0];
+		    s.parentNode.insertBefore(po, s);
+		})();
+		/*]]&gt;*/
+	    &lt;/script&gt;
+	    &lt;div class=&quot;g-plus&quot; data-href=&quot;https://plus.google.com/114283163993086871162&quot; data-width=&quot;300&quot; data-height=&quot;69&quot; data-theme=&quot;light&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;w2b-facebook&quot;&gt;
+	    &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FAyuda-de-Blogger%2F140889692709017&amp;amp;send=false&amp;amp;layout=standard&amp;amp;width=230&amp;amp;show_faces=true&amp;amp;action=like&amp;amp;colorscheme=light&amp;amp;font=arial&amp;amp;height=80&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:230px; height:66px;&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;w2b-gplusone&quot;&gt;
+	    &lt;script type=&quot;text/javascript&quot;&gt;/*&lt;![CDATA[*/
+	      (function() {
+		var po = document.createElement(&quot;script&quot;); po.type = &quot;text/javascript&quot;; po.async = true;
+		po.src = &quot;https://apis.google.com/js/plusone.js&quot;;
+		var s = document.getElementsByTagName(&quot;script&quot;)[0]; s.parentNode.insertBefore(po, s);
+	      })();/*]]&gt;*/
+	    &lt;/script&gt;
+	    &lt;div class=&quot;g-plusone&quot; data-size=&quot;medium&quot; data-href=&quot;http://www.ayudadeblogger.com/&quot;&gt;&lt;/div&gt;
+	    &lt;span&gt;Recommend on Google&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;w2b-twitter&quot;&gt;
+	    &lt;a href=&quot;https://twitter.com/ayudadeblogger&quot; class=&quot;twitter-follow-button&quot; data-show-count=&quot;true&quot;&gt;Follow @ayudadeblogger&lt;/a&gt;
+	    &lt;script type=&quot;text/javascript&quot;&gt;/*&lt;![CDATA[*/!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=&quot;//platform.twitter.com/widgets.js&quot;;fjs.parentNode.insertBefore(js,fjs);}}(document,&quot;script&quot;,&quot;twitter-wjs&quot;);/*]]&gt;*/&lt;/script&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;w2b-sociallinks&quot;&gt;
+	    &lt;ul class=&quot;w2b-social&quot;&gt;
+		&lt;li class=&quot;twitter&quot;&gt;&lt;a href=&quot;https://www.twitter.com/ayudadeblogger&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;rss&quot;&gt;&lt;a href=&quot;http://feeds.feedburner.com/ForoAyudaDeBlogger&quot;&gt;RSS&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;facebook&quot;&gt;&lt;a href=&quot;http://www.facebook.com/pages/Ayuda-de-Blogger/140889692709017&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+	    &lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;w2b-emailbox&quot;&gt;
+	    &lt;form action=&quot;http://feedburner.google.com/fb/a/mailverify&quot; method=&quot;post&quot; onsubmit=&quot;window.open(&#39;http://feedburner.google.com/fb/a/mailverify?uri=foroayudadeblogger&#39;, &#39;popupwindow&#39;, &#39;scrollbars=yes,width=550,height=520&#39;); return true&quot; target=&quot;popupwindow&quot;&gt;
+		&lt;table width=&quot;100%&quot;&gt;
+		    &lt;tr&gt;
+			&lt;td&gt;
+			    &lt;input class=&quot;emailu&quot; name=&quot;email&quot; placeholder=&quot;Enter your email&quot; type=&quot;text&quot;/&gt;
+			&lt;/td&gt;
+			&lt;td width=&quot;64px&quot;&gt;
+			    &lt;input class=&quot;submitu w2bBlue&quot; type=&quot;submit&quot; value=&quot;Subscribe&quot;/&gt;
+			&lt;/td&gt;
+		    &lt;/tr&gt;
+		&lt;/table&gt;
+		&lt;input name=&quot;uri&quot; type=&quot;hidden&quot; value=&quot;ForoAyudaDeBlogger&quot;/&gt;
+		&lt;input name=&quot;loc&quot; type=&quot;hidden&quot; value=&quot;en_US&quot;/&gt;
+	    &lt;/form&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;w2b-moresubs&quot;&gt;
+	    &lt;a href=&quot;http://www.ayudadeblogger.com/&quot;&gt;Quieres este Gadget&lt;/a&gt;
+	&lt;/div&gt;
+    &lt;/div&gt;</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+          </b:widget>
+          <b:widget id='PopularPosts1' locked='false' title='Peliculas más vista' type='PopularPosts'>
             <b:widget-settings>
               <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
               <b:widget-setting name='showThumbnails'>true</b:widget-setting>
               <b:widget-setting name='showSnippets'>true</b:widget-setting>
-              <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
+              <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
   <b:if cond='data:title'><h2><data:title/></h2>
@@ -1244,38 +1313,61 @@ function arlinafeed(e,t){for(var n=e.split("<"),r=0;r<n.length;r++)-1!=n[r].inde
   </div>
 </b:includable>
           </b:widget>
+          <b:widget id='Label1' locked='false' title='Etiquetas' type='Label'>
+            <b:widget-settings>
+              <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+              <b:widget-setting name='display'>LIST</b:widget-setting>
+              <b:widget-setting name='selectedLabelsList'/>
+              <b:widget-setting name='showType'>ALL</b:widget-setting>
+              <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+  <b:if cond='data:title'>
+    <h2><data:title/></h2>
+        <div class='info-sidebar'>
+         por orden alfabetico  
+        </div>
+  </b:if>
+  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+    <b:if cond='data:display == &quot;list&quot;'>
+      <ul>
+      <b:loop values='data:labels' var='label'>
+        <li>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </li>
+      </b:loop>
+      </ul>
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+          </b:widget>
+        </b:section>
+      </div>
  
-<div class='widget HTML' data-version='1' id='HTML123'>
-<div class='widget-content'>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- 300x600px -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:600px"
-     data-ad-client="ca-pub-5632533948662429"
-     data-ad-slot="1387876791"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
-</div><div class='widget HTML' data-version='1' id='HTML101'>
-<div class='widget-content'>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="autorelaxed"
-     data-ad-client="ca-pub-5632533948662429"
-     data-ad-slot="1411332096"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
-</div></div>
-</div>
-</div>
-</aside>
-<!-- spacer for skins that want sidebar and main to be the same height-->
-<div class='clear'></div>
-</div>
+ 
+
+
 </div>
 <div class='content-wrapper'>
 <footer itemprop='mainEntity' itemscope='itemscope' itemtype='https://schema.org/WPFooter'>
