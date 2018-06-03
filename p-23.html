@@ -34,10 +34,11 @@ var pages = getQueryVariable("page");
  function onYouTubeIframeAPIReady() {
   var player;
   player = new YT.Player('muteYouTubeVideoPlayer', {
-    videoId: ''+ pages +'', // YouTube Video ID
+    playlist: ''+ pages +'', // YouTube Video ID
     width: 560,               // Player width (in px)
     height: 316,              // Player height (in px)
     playerVars: {
+      rel: 0,    
       autoplay: 1,        // Auto-play the video on load
       controls: 1,        // Show pause/play buttons in player
       showinfo: 0,        // Hide the video title
@@ -59,8 +60,6 @@ var pages = getQueryVariable("page");
  // Written by @labnol 
 </script>	
 	
-<script>
-document.write('<iframe src="https://www.youtube.com/embed/'+ pages +'?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist='+ pages +'" frameborder="0" allowfullscreen></iframe>');
-</script>
+
 </body>
 </html>
