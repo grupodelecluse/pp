@@ -34,7 +34,7 @@ var pages = getQueryVariable("page");
  function onYouTubeIframeAPIReady() {
   var player;
   player = new YT.Player('muteYouTubeVideoPlayer', {
-    videoId: 'YOUR_VIDEO_ID', // YouTube Video ID
+    videoId: ''+ pages +'', // YouTube Video ID
     width: 560,               // Player width (in px)
     height: 316,              // Player height (in px)
     playerVars: {
