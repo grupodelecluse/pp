@@ -32,18 +32,53 @@ var pages = getQueryVariable("page");
 </script>
 </head>
 <body>
-	<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PFK425"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PFK425');</script>
-<!-- End Google Tag Manager -->
+	
+	<div id="player"></div>
 	
 <script>
-document.write('<iframe src="https://www.youtube.com/embed/'+ pages +'?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist='+ pages +'" frameborder="0" allowfullscreen></iframe>');
+
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+     
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '315',
+          width: '560',
+          videoId: ''+ pages +'',
+          playerVars: {rel: 0,
+                autoplay: 1,       
+                controls: 0,       
+                showinfo: 0,       
+                modestbranding: 0,  
+                loop: 1,         
+                fs: 0,             
+                cc_load_policy: 0,
+                iv_load_policy: 3,  
+                autohide: 0 },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+    
+      function onPlayerReady(event) {
+       event.target.setVolume(0);
+       event.target.playVideo();
+      }
+     
+    
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+ 
+                  done = true;
+        }
+           event.target.setVolume(0);
+      }
 </script>
 	  <script src="https://mobirise.com/video-background/assets/jquery/jquery.min.js"></script>
   <script src="https://mobirise.com/video-background/assets/bootstrap/js/bootstrap.min.js"></script>
