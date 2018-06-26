@@ -27,18 +27,21 @@ a {
   text-decoration:none;
   transition:all 400ms ease-in-out;
 }
-	a:visited {
+a:visited {
     color: #ff3c36;
     text-decoration: none;
 }
-	a:link {
+a:link {
     color: #ff3c36;
     overflow: hidden !important;
     text-decoration: none;
     outline: 0 none !important;
 }
+a.related-post-item-title:hover {
+    color: #ff3c36;
+}
 *{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-/* ==== Related Post Widget Start ==== */
+
 img {
     max-width: 100%;
     vertical-align: middle;
@@ -48,7 +51,7 @@ img {
 .related-post {
     float: left;
     width: auto;
-    height: 424px;
+    height: 419px;
     overflow: hidden;
 }
 .related-post h4 {
@@ -144,11 +147,8 @@ float: left !important;
 }
 
 .related-post-style-2 li:hover .related-post-item-thumbnail:after{opacity:.8}
+	
 
-	
-	
-	
-/* ==== Related Post Widget End ==== */
 </style>
 </head>
 <body>
@@ -179,7 +179,7 @@ function getQueryVariable(variable) {
   })();
 var relatedPostConfig = {
 		homePage: getQueryVariable("url"),
-        numPosts: 10,
+        numPosts: 4,
         summaryLength: 200,
         widgetStyle: 2
     };
