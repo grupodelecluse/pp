@@ -27,6 +27,16 @@ a {
   text-decoration:none;
   transition:all 400ms ease-in-out;
 }
+	a:visited {
+    color: #ff3c36;
+    text-decoration: none;
+}
+	a:link {
+    color: #ff3c36;
+    overflow: hidden !important;
+    text-decoration: none;
+    outline: 0 none !important;
+}
 *{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
 /* ==== Related Post Widget Start ==== */
 img {
@@ -36,10 +46,7 @@ img {
     height: auto;
 }
 .related-post {
-    background: #fff none repeat scroll 0 0;
-    border-top: 20px solid #f6f6f6;
     float: left;
-    margin: 20px 0 0;
     max-width: 830px;
     padding: 20px;
     width: auto;
@@ -106,24 +113,47 @@ float: left !important;
 
 	
 
+.related-post-style-2  li:nth-child(1) .related-post-item-title {
+    margin: 10px 0 0;
+}	
 .related-post-style-2 .related-post-item-title {
-  font-weight:100;
+    color: #222;
     display: block;
-    display: -webkit-box;
-	margin-top:10px;
-	margin-bottom:0;
-	line-height:1.1;
+    font: 700 1.3rem/123% "Work Sans",sans-serif;
+    text-decoration: none;
 }
-.related-post-style-2 .related-post-item-more,.related-post-style-2 .related-post-item-summary,.related-post-style-2 .related-post-item-more,.related-post-style-2 .related-post-item-summary a{
+	
+.related-post-style-2 .related-post-item-summary-text {
+    color: #555;
+    font: 400 1rem/140% "Lato",sans-serif;
+    margin: 7px 0 0;
+}
+
+.related-post-style-2 span {
+    display: block;
+}	
+
+	
+.related-post-style-2 li:nth-child(2) .related-post-item-title, .related-post-style-2 li:nth-child(3) .related-post-item-title, .related-post-style-2 li:nth-child(4) .related-post-item-title, .related-post-style-2 li:nth-child(5) .related-post-item-title {
+    font: 700 1.1rem/123% "Work Sans",sans-serif;
+    margin: 5px 0 0;
+}	
+
+.related-post-style-2 li:nth-child(2) .related-post-item-summary-text, .related-post-style-2 li:nth-child(3) .related-post-item-summary-text, .related-post-style-2 li:nth-child(4) .related-post-item-summary-text, .related-post-style-2 li:nth-child(5) .related-post-item-summary-text {
+    display: none !important;
+}	
+	
+		
+	
+.related-post-style-2 .related-post-item-more,.related-post-style-2 .related-post-item-more{
   display:none;
 }
 
 .related-post-style-2 li:hover .related-post-item-thumbnail:after{opacity:.8}
-@media screen and (max-width:1024px){
-	.related-post-style-2 li {
-	width:25%;
-	}
-}
+
+	
+	
+	
 /* ==== Related Post Widget End ==== */
 </style>
 </head>
