@@ -5,6 +5,16 @@
 <title>Random Post</title>
 <meta content='width=device-width, initial-scale=1' name='viewport'>
 <style>
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}	
+	
+	
 body {
   background-color:transparent;
   margin:0;
@@ -19,12 +29,17 @@ a {
 }
 *{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
 /* ==== Related Post Widget Start ==== */
-
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    height: auto;
+}
 .related-post {
     margin: 0 auto;
-    height: 555px;
+    height: 700px;
     overflow: hidden;
-    width: 600px;
+    width: 800px;
 }
 .related-post h4 {
   font-size:20px;
@@ -33,76 +48,61 @@ a {
 }
 
 /* Style 2 */
-
-ul.related-post-style-2 li:nth-child(1),ul.abt-sidebar-slider li:nth-child(2),ul.abt-sidebar-slider li:nth-child(3),ul.abt-sidebar-slider li:nth-child(4){
-display:block
-}
-ul.related-post-style-2 li:nth-child(1) {
+.related-post-style-2 li:nth-child(1) {
+    max-width: 360px;
     width: 100%;
-    height: 390px;
-    margin: 0 0 2px;
-    left: 0;
-    top: 0;
+float: left !important;
+    margin: 0 20px 0 0;
 }
-	
-.related-post-style-2 li {
-    display: block;
-    padding: 0;
+.related-post-style-2 li:nth-child(1) .related-post-item-thumbnail {
+    float: none;
+}
+.related-post-item-thumbnail {
+    background: #222 none repeat scroll 0 0 !important;
     float: left;
-    width: 200px;
-    height: 163px;
+    margin: 0 20px 0 0;
     overflow: hidden;
-    margin: 0 0 4px;
-    padding: 0 4px 0 0;
-    list-style: none;
+    width: 100%;
+}	
+.related-post-style-2 img:nth-child(1) {
+    height: 230px;
+}	
+.related-post-style-2 img {
+    max-height: 240px;
+    object-fit: cover;
+    opacity: 0.9;
+    padding: 0;
+    width: 100%;
+}	
+	
+.related-post-style-2 li:nth-child(2) {
+    overflow: hidden;
+    padding: 0 0 10px;
+}	
+	
+.related-post-style-2 li:nth-child(2) .related-post-item-thumbnail, .related-post-style-2 li:nth-child(3) .related-post-item-thumbnail, .related-post-style-2 li:nth-child(4) .related-post-item-thumbnail, .related-post-style-2 li:nth-child(5) .related-post-item-thumbnail {
+    height: 120px;
+    margin: 0 15px 0 0;
+    width: 150px;
+}
+.related-post-style-2 li:nth-child(2) ..related-post-item-thumbnail img, .related-post-style-2 li:nth-child(3) .related-post-item-thumbnail img, .related-post-style-2 li:nth-child(4) .related-post-item-thumbnail img {
+    height: 100%;
+}	
+	
+.related-post-style-2 li:nth-child(3), .related-post-style-2 li:nth-child(4), .related-post-style-2 li:nth-child(5) {
+    border-top: 1px solid #ddd;
+    overflow: hidden;
+    padding: 10px 0;
 }	
 	
 	
+	
 
-.related-post-style-2 {
-  margin:0 -4px 0 0;
-  padding:0;
-  list-style:none;
-}
 
 .related-post-style-2 li a:hover {color:#222}
-ul.related-post-style-2 .related-post-item-thumbnail li:nth-child(1) {
-  width:400px;
-  height:300px;
-  max-width:none;
-  max-height:none;
-  background-color:transparent;
-  border:none;
-  padding:0;
-  float:none;
-  margin:0;
-  transition:all 400ms ease-in-out;
-  position:relative;
-}
+
 	
-.related-post-style-2 .related-post-item-thumbnail {
-  width:100%;
-  height:auto;
-  max-width:none;
-  max-height:none;
-  background-color:transparent;
-  border:none;
-  padding:0;
-  float:none;
-  margin:0;
-  transition:all 400ms ease-in-out;
-  position:relative;
-}	
-	
-.related-post-style-2 .related-post-item-thumbnail img {
-  width:100%;
-  height:100%;
-  max-width:none;
-  max-height:none;
-  background-color:transparent;
-  border:none;
-  display:block;
-}
+
 .related-post-style-2 .related-post-item-title {
   font-weight:100;
     display: block;
